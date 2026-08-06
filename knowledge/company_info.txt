@@ -1,0 +1,32 @@
+SalesMind AI Company Information
+
+Company Name: SalesMind AI
+
+CEO: Naitik Soni
+
+Founded: 2026
+
+Head Office: Kota, Rajasthan, India
+
+Main Products:
+- AI Sales Dashboard
+- AI Business Analyst
+- RAG Knowledge Assistant
+- Multi-Agent AI System
+
+Mission:
+To help businesses make smarter decisions using Artificial Intelligence.
+
+Vision:
+Become one of India's leading AI software companies.
+
+Top Customer:
+Digital Whopper
+
+Technology Stack:
+Python
+Streamlit
+LangChain
+ChromaDB
+Ollama
+Qwen3
