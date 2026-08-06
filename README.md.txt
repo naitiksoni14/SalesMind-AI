@@ -1,78 +1,176 @@
 # 🤖 SalesMind AI Enterprise
 
-An AI-powered Business Intelligence Platform that combines **Generative AI, RAG, Business Analytics, and Executive Reporting** into one application.
+An AI-powered Business Intelligence Platform built using **Generative AI, Retrieval-Augmented Generation (RAG), Local LLMs, and Interactive Analytics**.
+
+SalesMind AI helps businesses analyze sales data, generate executive reports, and query company knowledge using natural language.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 - 📊 Interactive Sales Dashboard
-- 💬 AI Business Analyst (Local LLM)
+- 💬 AI Business Analyst
 - 📚 Company Knowledge Assistant (RAG)
-- 📂 PDF Upload & Knowledge Base
-- 📄 Executive Report Generator
-- 📥 Export Reports as PDF
-- 🔍 Semantic Search using ChromaDB
-- 🧠 Local AI using Ollama + Qwen3
+- 📄 PDF Upload & Semantic Search
+- 🧠 ChromaDB Vector Database
+- 🤖 Local LLM using Ollama + Qwen3
+- 📄 AI Executive Report Generator
+- 📥 PDF Report Export
+- 🎯 Multi-page Streamlit Interface
 
 ---
 
-## 🛠 Tech Stack
+# 🏗 System Architecture
+
+```
+            Sales CSV
+                 │
+                 ▼
+        Sales Analytics Engine
+                 │
+                 ▼
+         AI Business Analyst
+                 │
+                 ▼
+          Ollama (Qwen3)
+
+────────────────────────────────
+
+            Company PDF
+                 │
+                 ▼
+           PDF Loader
+                 │
+                 ▼
+         Text Splitter
+                 │
+                 ▼
+      HuggingFace Embeddings
+                 │
+                 ▼
+            ChromaDB
+                 │
+                 ▼
+            RAG Retriever
+                 │
+                 ▼
+          Ollama (Qwen3)
+```
+
+---
+
+# 🛠 Tech Stack
+
+## Programming
 
 - Python
+
+## Frontend
+
 - Streamlit
-- Pandas
-- LangChain
-- ChromaDB
-- Sentence Transformers
+
+## AI / LLM
+
 - Ollama
 - Qwen3
+- LangChain
+
+## RAG
+
+- ChromaDB
+- Sentence Transformers
+- PyPDF
+
+## Data
+
+- Pandas
+- NumPy
+
+## Reports
+
 - ReportLab
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
-```text
+```
 SalesMind_AI/
-│
+
 ├── app.py
-├── pages/
+├── ui_pages/
 ├── modules/
-├── knowledge/
 ├── vector_db/
+├── notebooks/
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙ Installation
+
+Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/naitiksoni14/SalesMind-AI.git
+```
 
-cd SalesMind_AI
+Go inside the folder
 
+```bash
+cd SalesMind-AI
+```
+
+Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+Run the application
+
+```bash
 streamlit run app.py
 ```
 
 ---
 
-## 🎯 Use Cases
+# 🎯 Key AI Concepts Demonstrated
 
-- Business Analytics
-- AI-powered Sales Insights
-- Company Knowledge Search
+- Retrieval-Augmented Generation (RAG)
+- Vector Databases
+- Semantic Search
+- Local LLM Deployment
+- Prompt Engineering
+- AI Business Analysis
 - Executive Report Generation
-- Local AI Applications
 
 ---
 
-## 👨‍💻 Author
+# 📸 Screenshots
+
+(Add screenshots here after deployment.)
+
+---
+
+# 🔮 Future Improvements
+
+- SQL Database Integration
+- Multi-user Authentication
+- Cloud Deployment
+- Chat History
+- Voice Assistant
+- Dashboard Forecasting
+- AI Agents
+
+---
+
+# 👨‍💻 Author
 
 **Naitik Soni**
 
 Aspiring Generative AI Engineer
+
+GitHub:
+https://github.com/naitiksoni14
